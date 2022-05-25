@@ -7,7 +7,7 @@ on:
       - closed
       - assigned
 env:
-  PROJECT_NAME: todo
+  PROJECT_NAME: Qiita
 jobs:
   issue_labels:
     runs-on: ubuntu-latest
