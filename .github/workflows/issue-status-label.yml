@@ -44,8 +44,9 @@ jobs:
         uses: technote-space/create-project-card-action@v1
         if: "github.event.action == 'opened'"
         with:
-          PROJECT: ${{env.PROJECT_NAME}}
-          COLUMN: Backlog
+          project: ${{env.PROJECT_NAME}}
+          column: Backlog
+          repo-token: ${{ secrets.PAT }}
 
   move_assigned_card:
     runs-on: ubuntu-latest
@@ -54,12 +55,12 @@ jobs:
       - uses: alex-page/github-project-automation-plus@v0.3.0
         if: "github.event.action == 'assigned'"
         with:
-          PROJECT: ${{env.PROJECT_NAME}}
-          COLUMN: In Progress
+          project: ${{env.PROJECT_NAME}}
+          column: In Progress
           repo-token: ${{ secrets.PAT }}
       - uses: alex-page/github-project-automation-plus@v0.3.0
         if: "github.event.action == 'reopened'"
         with:
-          PROJECT: ${{env.PROJECT_NAME}}
-          COLUMN: In Progress
+          project: ${{env.PROJECT_NAME}}
+          column: In Progress
           repo-token: ${{ secrets.PAT }}
