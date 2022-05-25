@@ -6,6 +6,7 @@ on:
       - opened
       - closed
       - assigned
+permissions: read-all|write-all
 env:
   PROJECT_NAME: Qiita
 jobs:
