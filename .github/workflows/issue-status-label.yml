@@ -54,12 +54,12 @@ jobs:
       - uses: alex-page/github-project-automation-plus@v0.3.0
         if: "github.event.action == 'assigned'"
         with:
-          project: ${{env.PROJECT_NAME}}
-          column: In Progress
+          PROJECT: ${{env.PROJECT_NAME}}
+          COLUMN: In Progress
           repo-token: ${{ secrets.PAT }}
       - uses: alex-page/github-project-automation-plus@v0.3.0
         if: "github.event.action == 'reopened'"
         with:
-          project: ${{env.PROJECT_NAME}}
-          column: In Progress
+          PROJECT: ${{env.PROJECT_NAME}}
+          COLUMN: In Progress
           repo-token: ${{ secrets.PAT }}
