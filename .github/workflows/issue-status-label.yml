@@ -46,7 +46,6 @@ jobs:
         with:
           PROJECT: ${{env.PROJECT_NAME}}
           COLUMN: Backlog
-          GITHUB_TOKEN: ${{ secrets.PAT }}
 
   move_assigned_card:
     runs-on: ubuntu-latest
