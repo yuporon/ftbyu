@@ -1,2 +1,2 @@
-![yu's github stats](https://git-hub-readme-stats-clone-five.vercel.app/api?username=yuporon&count_private=true&show_icons=true)
-![Top Langs](https://git-hub-readme-stats-clone-five.vercel.app/api/top-langs/?username=yuporon&layout=compact)
+![yu's github stats](https://github-readme-stats.vercel.app/api?username=yuporon&count_private=true&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yuporon&layout=compact)
